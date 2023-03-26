@@ -13,7 +13,6 @@ function TeamCard({id, image, instagramLink, facebookLink}) {
             yPercent: 200
         })
         card.current.addEventListener("mouseenter", (e)=>{
-            console.log(e.target.children)
             let tl = gsap.timeline();
             tl.to(`#TeamCard-${id} .TeamCard-medias`, {
                 yPercent: 0,

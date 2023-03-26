@@ -1,10 +1,17 @@
 import "./TeamPage.css"
+// import SwiperCore, { Navigation, Pagination } from "swiper";
+// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+
 
 import TeamCard from "../TeamCard/TeamCard"
 
+
 import team from "../../data/team.json"
 
-function TeamPage (props) {
+// SwiperCore.use([Navigation, Pagination]);
+function TeamPage(props) {
     return (
         <section className="TeamPage">
             <div className="TeamPage-heading">
@@ -14,11 +21,16 @@ function TeamPage (props) {
                 </p>
             </div>
             <div className="TeamPage-cards">
-                {
-                    team.map(item => 
-                        <TeamCard key={item.id} id={item.id} image={item.pic} instagramLink={item.instagram} facebookLink={item.facebook}/>
-                    )
-                }
+                <Swiper autoplay={{delay: 5000}} loop={false} centeredSlidesBounds={true} centeredSlides={true} centerInsufficientSlides={true} slidesPerView={4.25} direction={"horizontal"}>
+                    {
+                        team.map(item =>
+                            <SwiperSlide key={item.id}>
+                                {/* Slde */}
+                                <TeamCard key={item.id} id={item.id} image={item.pic} instagramLink={item.instagram} facebookLink={item.facebook} />
+                            </SwiperSlide>
+                        )
+                    }
+                </Swiper>
             </div>
         </section>
     )

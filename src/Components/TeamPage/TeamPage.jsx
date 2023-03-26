@@ -1,5 +1,9 @@
 import "./TeamPage.css"
 
+import TeamCard from "../TeamCard/TeamCard"
+
+import team from "../../data/team.json"
+
 function TeamPage (props) {
     return (
         <section className="TeamPage">
@@ -10,7 +14,11 @@ function TeamPage (props) {
                 </p>
             </div>
             <div className="TeamPage-cards">
-                
+                {
+                    team.map(item => 
+                        <TeamCard image={item.pic} instagramLink={item.instagram} facebookLink={item.facebook}/>
+                    )
+                }
             </div>
         </section>
     )

@@ -7,9 +7,11 @@ function TeamCard(props) {
         <div className="TeamCard">
             <img src={props.image} alt="Team member" className="TeamCard-image" />
             <div className="TeamCard-medias">
-                <a href="/" className="TeamCard-media-btn"><img src={instagramIcon} alt="instagram" className="TeamCard-mediaIcon" /></a>
-                <a href="/" className="TeamCard-media-btn"><img src={facebookIcon} alt="facebook" className="TeamCard-mediaIcon" /></a>
+                <a href={props.instagramLink} className="TeamCard-media-btn"><img src={instagramIcon} alt="instagram" className="TeamCard-mediaIcon" /></a>
+                <a href={props.facebookLink} className="TeamCard-media-btn"><img src={facebookIcon} alt="facebook" className="TeamCard-mediaIcon" /></a>
             </div>
         </div>
     )
 }
+
+export default TeamCard

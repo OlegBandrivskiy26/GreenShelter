@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.TeamPage {
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TeamPage-heading {
+    width: 100vw;
+    padding: 50px 140px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.TeamPage-headline {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(15px + 1.5vw);
+    line-height: 120.5%;
+    /* or 58px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333333;
+}
+
+.TeamPage-healine-green {
+    color: #4A9B8D;
+}
+
+.TeamPage-description {
+    width: min(678px, 100%);
+    text-align: left;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(10px + .5vw);
+    line-height: 27px;
+    color: #333333;
+}
+
+.TeamPage-description-bold {
+    font-weight: 500;
+}
+
+.TeamPage-cards {
+    display: flex;
+    gap: 70px;
+}

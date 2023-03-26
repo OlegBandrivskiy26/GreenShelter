@@ -6,6 +6,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
 }
 
 .TeamCard-image {
@@ -17,6 +18,18 @@
     left: 0;
     right: 0;
     z-index: 0;
+    transition: filter 0.3s;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -webkit-transition: filter 0.3s;
+    -moz-transition: filter 0.3s;
+    -ms-transition: filter 0.3s;
+    -o-transition: filter 0.3s;
+}
+
+.TeamCard:hover .TeamCard-image {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
 
 .TeamCard-medias {

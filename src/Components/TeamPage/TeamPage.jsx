@@ -16,7 +16,7 @@ function TeamPage (props) {
             <div className="TeamPage-cards">
                 {
                     team.map(item => 
-                        <TeamCard image={item.pic} instagramLink={item.instagram} facebookLink={item.facebook}/>
+                        <TeamCard key={item.id} id={item.id} image={item.pic} instagramLink={item.instagram} facebookLink={item.facebook}/>
                     )
                 }
             </div>

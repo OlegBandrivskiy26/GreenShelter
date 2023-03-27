@@ -5,10 +5,12 @@
 }
 
 .TeamPage {
+    min-height: min(100vh, 750px);
+    padding: 50px 0;
     max-width: 100vw;
     overflow-x: hidden;
     display: flex;
-    gap: 40px;
+    gap: 70px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -16,7 +18,7 @@
 
 .TeamPage-heading {
     width: 100vw;
-    padding: 50px 140px;
+    padding: 0 140px;
     display: flex;
     gap: 25px;
     align-items: center;
@@ -60,4 +62,29 @@
     max-width: 100vw;
     display: flex;
     gap: 70px;
+}
+
+@media screen and (max-width: 800px) {
+    .TeamPage-heading {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .TeamPage-description {
+        text-align: center;
+        font-size: calc(14px + 0.25vw);
+    }
+    .TeamPage-headline {
+        text-align: center;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .TeamPage-heading {
+        padding: 25px;
+        ;
+    }
 }

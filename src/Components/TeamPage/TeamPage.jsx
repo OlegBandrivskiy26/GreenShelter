@@ -1,5 +1,6 @@
 import "./TeamPage.css"
 import { register } from 'swiper/element/bundle';
+import { useRef, useEffect } from "react";
 import "swiper/element/css/autoplay"
 import "swiper/element/css/virtual"
 
@@ -8,7 +9,31 @@ import TeamCard from "../TeamCard/TeamCard"
 import team from "../../data/team.json"
 
 register();
-function TeamPage(props) {
+function TeamPage() {
+    let swiperRef = useRef(null)
+    useEffect(() => {
+        function changeSlides() {
+            if (window.innerWidth <= 454) {
+                swiperRef.current.setAttribute("slides-per-view", "1")
+                swiperRef.current.setAttribute("space-between", "25")
+                swiperRef.current.setAttribute("centered-slides-bounds", "false")
+            } else if (window.innerWidth <= 800) {
+                swiperRef.current.setAttribute("slides-per-view", "1.5")
+                swiperRef.current.setAttribute("space-between", "50")
+                swiperRef.current.setAttribute("centered-slides-bounds", "false")
+            } else if (window.innerWidth <= 1300) {
+                swiperRef.current.setAttribute("slides-per-view", "3.25")
+                swiperRef.current.setAttribute("space-between", "70")
+                swiperRef.current.setAttribute("centered-slides-bounds", "true")
+            } else {
+                swiperRef.current.setAttribute("slides-per-view", "4.25")
+                swiperRef.current.setAttribute("space-between", "70")
+                swiperRef.current.setAttribute("centered-slides-bounds", "true")
+            }
+        }
+        changeSlides()
+        window.addEventListener("resize", changeSlides)
+    }, [])
     return (
         <section className="TeamPage">
             <div className="TeamPage-heading">
@@ -18,10 +43,26 @@ function TeamPage(props) {
                 </p>
             </div>
             <div className="TeamPage-cards">
-                <swiper-container free-mode="true" loop="false" centered-slides="false" slides-per-view="4.5" direction="horizontal">
+                <swiper-container
+                    ref={swiperRef}
+                    space-between="70"
+                    centered-slides="true"
+                    center-insufficient-slides="true"
+                    centered-slides-bounds="true"
+                    slides-per-view=""
+                    direction="horizontal"
+                    style={{
+                        "padding": "0 50px"
+                    }}
+                    edge-swipe-detection="true"
+                >
                     {
                         team.map(item =>
-                            <swiper-slide key={item.id}>
+                            <swiper-slide style={{
+                                "display": "flex",
+                                "alignItems": "center",
+                                "justifyContent": "center"
+                            }} key={item.id}>
                                 <TeamCard key={item.id} id={item.id} image={item.pic} instagramLink={item.instagram} facebookLink={item.facebook} />
                             </swiper-slide>
                         )

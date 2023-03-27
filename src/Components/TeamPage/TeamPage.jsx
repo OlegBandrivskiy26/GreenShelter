@@ -23,7 +23,7 @@ function TeamPage() {
                 swiperRef.current.setAttribute("centered-slides-bounds", "false")
             } else if (window.innerWidth <= 1300) {
                 swiperRef.current.setAttribute("slides-per-view", "3.25")
-                swiperRef.current.setAttribute("space-between", "70")
+                swiperRef.current.setAttribute("space-between", "50")
                 swiperRef.current.setAttribute("centered-slides-bounds", "true")
             } else {
                 swiperRef.current.setAttribute("slides-per-view", "4.25")
@@ -58,7 +58,7 @@ function TeamPage() {
                 >
                     {
                         team.map(item =>
-                            <swiper-slide style={{
+                            <swiper-slide lazy="true" style={{
                                 "display": "flex",
                                 "alignItems": "center",
                                 "justifyContent": "center"

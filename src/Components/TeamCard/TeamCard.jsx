@@ -31,7 +31,7 @@ function TeamCard({id, image, instagramLink, facebookLink}) {
     }, [id])
     return (
         <div ref={card} id={`TeamCard-${id}`} className="TeamCard">
-            <img src={image} alt="Team member" className="TeamCard-image" />
+            <img loading="lazy" src={image} alt="Team member" className="TeamCard-image" />
             <div className="TeamCard-medias">
                 <a href={instagramLink} className="TeamCard-media-btn"><img src={instagramIcon} alt="instagram" className="TeamCard-mediaIcon" /></a>
                 <a href={facebookLink} className="TeamCard-media-btn"><img src={facebookIcon} alt="facebook" className="TeamCard-mediaIcon" /></a>

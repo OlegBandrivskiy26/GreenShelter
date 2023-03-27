@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.TeamPage * {
+    max-width: 100%;
+}
+
 .TeamPage {
     min-height: min(100vh, 750px);
     padding: 50px 0;

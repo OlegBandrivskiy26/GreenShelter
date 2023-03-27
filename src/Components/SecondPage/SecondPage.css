@@ -19,10 +19,7 @@
 
 
 
-.SecondPage svg {
-    position: relative;
-    top: 95px;
-}
+
 
 /* SecondPageConatiner */
 
@@ -31,7 +28,7 @@
     height: 390px;
     background-color: white;
     position: relative;
-    top: 80px;
+    top: -70px;
     display: flex;
     justify-content: space-around;
 }
@@ -78,4 +75,19 @@
 p {
     font-size: 24px;
 
+}
+
+
+.ImageBigger {
+    /* display: none; */
+    position: relative;
+    /* top: 1500px; */
+    /* display: none; */
+
+    width: 1200px;
+    height: 690px;
+    top: -60px;
+    border-radius: 10px;
+    z-index: 2;
+    transition: 1s;
 }

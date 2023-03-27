@@ -45,6 +45,12 @@
 .SecondPageTextConatiner__p {
     font-size: 46px;
     font-weight: 400;
+    text-align: left;
+
+    font-family: 'Comfortaa';
+
+
+
 }
 
 .green {
@@ -60,7 +66,13 @@
     justify-content: center;
     align-items: center;
 
-    color: #333333
+    color: #333333;
+    text-align: left;
+
+    font-family: 'Comfortaa';
+    position: relative;
+    top: 20px;
+
 }
 
 p {

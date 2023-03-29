@@ -5,6 +5,8 @@ import TeamPage from "./Components/TeamPage/TeamPage"
 import SecondPage from './Components/SecondPage/SecondPage';
 import ThirdPage from './Components/ThirdPage/ThirdPage';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
 
       {/* ThirdPage */}
       <ThirdPage />
+
 
 
 

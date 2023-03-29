@@ -29,7 +29,7 @@
     height: 390px;
     background-color: white;
     position: relative;
-    top: -70px;
+    top: -30px;
     display: flex;
     justify-content: space-around;
 }
@@ -37,6 +37,7 @@
 .SecondPageTextContainer {
     width: 540px;
     height: 390px;
+
 
 }
 
@@ -98,11 +99,38 @@ p {
     transition: 1s;
 }
 
+.SecondPage__BlurAdaptive {
+    position: relative;
+
+
+    width: 500px;
+    height: 119px;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(17px);
+
+
+
+    /* Note: backdrop-filter has minimal browser support */
+
+
+
+
+    border-radius: 40px 40px 0px 0px;
+
+}
+
+.content {
+    z-index: 2000;
+}
+
+
+
 
 @media screen and (max-width: 800px) {
     .SecondPage {
         width: 800px;
-        height: 1050px;
+        height: 980px;
 
         display: flex;
         justify-content: center;
@@ -111,16 +139,14 @@ p {
         flex-direction: column;
     }
 
-    .SecondImage {
-        border-radius: 0;
-    }
+
 
     .SecondPageContainer {
         width: 800px;
         height: 90px;
         display: flex;
         flex-direction: column;
-        top: 10px;
+        top: 40px;
 
 
 
@@ -128,8 +154,12 @@ p {
     }
 
     .SecondImage {
-        width: 500px;
+        width: 486px;
         height: 300px;
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+        top: 90px;
+
     }
 
 
@@ -137,8 +167,8 @@ p {
 
     .SecondPageText {
         position: relative;
-        left: 140px;
-        top: -470px;
+        left: 120px;
+        top: -440px;
 
     }
 
@@ -160,7 +190,14 @@ p {
         visibility: visible;
         color: black;
         position: relative;
-        left: 130px;
+        left: 120px;
+        top: 51px;
+
+
+
+        display: flex;
+        align-items: center;
+
 
 
 
@@ -168,11 +205,14 @@ p {
 
     }
 
+
+
     .contentAdaptive::before {
         content: '“Green Shelter”';
         visibility: visible;
         position: relative;
         left: -50px;
+        top: 10px;
 
 
 
@@ -189,19 +229,21 @@ p {
         content: 'Хто';
         color: #4A9B8D;
         position: relative;
-        left: -110px;
+
     }
 
 
 
     .content {
         visibility: hidden;
+        /* z-index: 2000; */
     }
 
     .content::before {
         content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
         font-size: 24px;
         visibility: visible;
+        z-index: 2000;
     }
 
     /* .SeconPageContainer__p__container {
@@ -209,12 +251,29 @@ p {
         top: 120px
     } */
     .SeconPageContainer__p__container {
-        width: 326px;
-        height: 70px;
+        width: 331px;
+        height: 120px;
         position: relative;
-        left: 17%;
-        top: 170px;
+        left: 14%;
+        top: 160px;
+        text-align: center;
+        font-size: 24px;
+        /* padding: 2px; */
+
     }
+
+
+    .SecondPage__BlurAdaptive {
+
+        position: relative;
+        top: -50px;
+        width: 486px;
+        height: 140px;
+        left: -157px;
+
+
+    }
+
 
 
 

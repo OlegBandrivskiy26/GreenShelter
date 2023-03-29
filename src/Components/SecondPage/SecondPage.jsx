@@ -46,22 +46,36 @@ function SecondPage() {
 
 
 
+                    {/* BlurAdaptiveBlock */}
 
 
                 </div>
-            )}
+
+
+
+
+
+
+
+            )
+
+
+            }
+            <div className="SecondPage__BlurAdaptive"></div>
 
 
 
 
 
             {/* svg */}
-            {isOpen && (
-                <img src={imageBiger} alt="" className='ImageBigger' onClick={CloseImage} />
-            )}
+            {
+                isOpen && (
+                    <img src={imageBiger} alt="" className='ImageBigger' onClick={CloseImage} />
+                )
+            }
 
 
-        </div>
+        </div >
     )
 }
 export default SecondPage;

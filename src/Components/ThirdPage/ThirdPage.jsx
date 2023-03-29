@@ -6,6 +6,11 @@ import third from './ThirdImages/image3.png'
 import forth from './ThirdImages/image4.png'
 import fifth from './ThirdImages/image5.png'
 import sixth from './ThirdImages/image6.png'
+import firstAdap from './ThirdImages/imageAdap1.png'
+import secondAdap from './ThirdImages/imageAdap2.png'
+import thirdAdap from './ThirdImages/imageAdap3.png'
+
+
 
 
 
@@ -21,6 +26,17 @@ function ThirdPage() {
 
 
     ]
+    const adaptiveCards = [
+        { id: 1, name: 'Миски', img: first },
+        { id: 2, name: 'Собача їжа', img: third },
+        { id: 3, name: 'Іграшки', img: firstAdap },
+        { id: 4, name: 'Нашийники', img: second },
+        { id: 5, name: 'Медикаменти', img: secondAdap },
+        { id: 6, name: 'Вітаміни', img: thirdAdap },
+        { id: 6, name: 'Будки для ', second__name: 'собак', img: sixth }
+
+
+    ]
 
     return (
 
@@ -31,7 +47,11 @@ function ThirdPage() {
                 <path fill="#428F81" fill-opacity="1" d="M0,128L120,154.7C240,181,480,235,720,256C960,277,1200,267,1320,261.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
 
             <div className="ThirdPage__TextContainer">
-                <p className='ThirdPage__text'><span>Oкрім</span> донату для будівництва,</p>
+                <div className="ThirdPageText">
+                    <p className='ThirdPage__text'><span className='ThirdSpan'>Oкрім</span> донату для будівництва,</p>
+                </div>
+                <p className='ThirdPage__middle'></p>
+
                 <p className='ThirdPage__p'> ми потребуємо</p>
 
 
@@ -51,6 +71,24 @@ function ThirdPage() {
                     </div>
 
                 )}
+                <div className="ThirdPage__CardContainer  two">
+                    {adaptiveCards.map(adaptiveCard =>
+                        <div className="Card" key={adaptiveCard.id}>
+                            <img src={adaptiveCard.img} alt="" />
+
+                            <div className="CardTextContainer">
+
+                                <p className='Card__p'>{adaptiveCard.name}</p>
+                                <p className='Card__p'>{adaptiveCard.second__name}</p>
+                            </div>
+
+                        </div>
+
+                    )}
+
+
+
+                </div>
 
 
 

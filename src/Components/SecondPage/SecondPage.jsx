@@ -28,16 +28,18 @@ function SecondPage() {
 
                 <div className="SecondPageContainer">
 
-                    <img src={image} alt="" onClick={OpenImage} />
+                    <img src={image} alt="" onClick={OpenImage} className='SecondImage' />
 
 
 
                     <div className="SecondPageTextContainer">
-                        <p className='SecondPageTextConatiner__p green'>Green house</p>
-                        <p className='SecondPageTextConatiner__p'>dogs shelter </p>
+                        <div className="SecondPageText">
+                            <p className='SecondPageTextConatiner__p green'><span className='greenSpan'>Green</span>  house</p>
+                            <p className='SecondPageTextConatiner__p contentAdaptive' >dogs shelter </p>
+                        </div>
 
                         <div className="SeconPageContainer__p__container">
-                            <p> Громадська організація, що опікується безпритульними собаками, яких евакуювали з зони бойових дій. Наша мета – надати належні умови для евакуйованих притулків та приватних собак, які шукають тимчасовий прихисток. Допомогти з підготовкою вакцин та документів для подальшого виїзду за кордон у приймаючі сім’ї чи притулки інших організацій.</p>
+                            <p className='content contentHide'> Громадська організація, що опікується безпритульними собаками, яких евакуювали з зони бойових дій. Наша мета – надати належні умови для евакуйованих притулків та приватних собак, які шукають тимчасовий прихисток. Допомогти з підготовкою вакцин та документів для подальшого виїзду за кордон у приймаючі сім’ї чи притулки інших організацій.</p>
 
                         </div>
                     </div>

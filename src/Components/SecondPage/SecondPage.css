@@ -126,20 +126,16 @@ p {
 
 
 
-
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .SecondPage {
         width: 800px;
         height: 980px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
-
-
 
     .SecondPageContainer {
         width: 800px;
@@ -154,7 +150,7 @@ p {
     }
 
     .SecondImage {
-        width: 486px;
+        width: 800px;
         height: 300px;
         border-radius: 10px 10px 0px 0px;
         position: relative;
@@ -167,8 +163,8 @@ p {
 
     .SecondPageText {
         position: relative;
-        left: 120px;
-        top: -440px;
+        left: 280px;
+        top: -430px;
 
     }
 
@@ -228,7 +224,166 @@ p {
         visibility: visible;
         content: 'Хто';
         color: #4A9B8D;
+
+
+    }
+
+
+
+    .content {
+        visibility: hidden;
+        /* z-index: 2000; */
+    }
+
+    .content::before {
+        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
+        font-size: 29px;
+        visibility: visible;
+        z-index: 2000;
+    }
+
+    /* .SeconPageContainer__p__container {
+        height: 70px;
+        top: 120px
+    } */
+    .SeconPageContainer__p__container {
+        width: 541px;
+        height: 150px;
         position: relative;
+        left: 22%;
+        top: 50px;
+        text-align: center;
+        font-size: 24px;
+        /* padding: 2px; */
+
+    }
+
+
+    .SecondPage__BlurAdaptive {
+
+        position: relative;
+        top: -50px;
+        width: 790px;
+        left: -10px;
+
+        height: 140px;
+        border-radius: 40px 40px 0px 0px;
+
+
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .SecondPage {
+        width: 486px;
+        height: 980px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+    .SecondPageContainer {
+        width: 486px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+
+
+
+
+    }
+
+    .SecondImage {
+        width: 486px;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+        top: 90px;
+
+    }
+
+
+
+
+    .SecondPageText {
+        position: relative;
+        left: 120px;
+        top: -430px;
+
+    }
+
+
+    .SecondPageTextConatiner__p {
+        visibility: hidden;
+
+    }
+
+    .SecondPageTextConatiner__p::before {
+        content: '  такі';
+        font-size: 46px;
+        font-weight: 400;
+
+
+        font-family: 'Comfortaa';
+
+
+        visibility: visible;
+        color: black;
+        position: relative;
+        left: 120px;
+        top: 51px;
+
+
+
+        display: flex;
+        align-items: center;
+
+
+
+
+
+
+    }
+
+
+
+    .contentAdaptive::before {
+        content: '“Green Shelter”';
+        visibility: visible;
+        position: relative;
+        left: -50px;
+        top: 10px;
+
+
+
+
+
+    }
+
+    .greenSpan {
+        visibility: hidden;
+    }
+
+    .greenSpan::before {
+        visibility: visible;
+        content: 'Хто';
+        color: #4A9B8D;
+
 
     }
 
@@ -267,9 +422,13 @@ p {
 
         position: relative;
         top: -50px;
-        width: 486px;
+
+        width: 500px;
+        left: -2px;
         height: 140px;
-        left: -157px;
+
+        border-radius: 40px 40px 0px 0px;
+
 
 
     }

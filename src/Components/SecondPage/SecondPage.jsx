@@ -33,7 +33,7 @@ function SecondPage() {
 
 
                     <div className="SecondPageTextContainer">
-                        <div className="SecondPageText">
+                        <div className="SecondPageText  TextAdap">
                             <p className='SecondPageTextConatiner__p green'><span className='greenSpan'>Green</span>  house</p>
                             <p className='SecondPageTextConatiner__p contentAdaptive' >dogs shelter </p>
                         </div>

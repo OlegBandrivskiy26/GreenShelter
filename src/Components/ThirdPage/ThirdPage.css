@@ -97,7 +97,7 @@ span {
 @media screen and (max-width: 800px) {
 
     .ThirdPage {
-        width: 486px;
+        width: 800px;
         height: 1500px;
 
     }
@@ -105,10 +105,10 @@ span {
     .ThirdPage svg {
         height: 700px;
 
-        width: 486px;
+        width: 800px;
 
         position: relative;
-        top: -570px;
+        top: -607px;
 
 
 
@@ -137,10 +137,14 @@ span {
 
     .ThirdPage__TextContainer {
         position: relative;
-        width: 486px;
+        width: 800px;
         top: -800px;
         height: 123px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
 
 
 
@@ -192,7 +196,7 @@ span {
     }
 
     .ThirdPageText {
-        width: 4860px;
+        width: 486px;
         display: flex;
         justify-content: space-between;
     }
@@ -206,6 +210,135 @@ span {
         left: 40px;
 
 
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .ThirdPage {
+        width: 486px;
+        height: 1500px;
+
+    }
+
+    .ThirdPage svg {
+        height: 700px;
+
+        width: 486px;
+
+        position: relative;
+        top: -570px;
+
+
+
+
+    }
+
+    .ThirdPage__CardContainer {
+        visibility: hidden;
+    }
+
+
+
+    .two {
+        visibility: visible;
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        top: -900px;
+        width: 486px;
+
+
+
+    }
+
+    .ThirdPage__TextContainer {
+        position: relative;
+        width: 486px;
+        top: -780px;
+        height: 123px;
+        text-align: center;
+
+
+
+    }
+
+    .ThirdPage__text,
+    .ThirdPage__p {
+        visibility: hidden;
+    }
+
+    .ThirdSpan::before {
+        content: 'Чим';
+        visibility: visible;
+
+        color: black;
+        position: relative;
+        text-align: right;
+
+
+        font-size: 36px;
+        font-weight: 500;
+        left: -125px;
+        top: 0;
+
+
+    }
+
+    .ThirdPage__text::before {
+        visibility: visible;
+        content: 'ви можете';
+        font-size: 36px;
+
+        position: relative;
+        text-align: left;
+        position: relative;
+        left: 180px;
+
+
+
+
+    }
+
+    .ThirdPage__middle::before {
+        content: 'допомогти';
+        color: white;
+        font-size: 36px;
+        font-family: 'Comfortaa';
+        position: relative;
+        top: -45px;
+
+    }
+
+    .ThirdPageText {
+        width: 486px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 50px;
+    }
+
+    .ThirdPage__p::before {
+        visibility: visible;
+        content: 'нашому притулку';
+        color: white;
+        font-size: 36px;
+        position: relative;
+        left: 40px;
+        top: -40px
     }
 
 

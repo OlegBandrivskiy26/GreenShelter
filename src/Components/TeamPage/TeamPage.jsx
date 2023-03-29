@@ -13,15 +13,16 @@ function TeamPage() {
     let swiperRef = useRef(null)
     useEffect(() => {
         function changeSlides() {
-            if (window.innerWidth <= 454) {
-                swiperRef.current.setAttribute("slides-per-view", "1")
+            let pageWidth = document.querySelector(".TeamPage").clientWidth;
+            if (pageWidth <= 454) {
+                swiperRef.current.setAttribute("slides-per-view", "1.15")
                 swiperRef.current.setAttribute("space-between", "25")
                 swiperRef.current.setAttribute("centered-slides-bounds", "false")
-            } else if (window.innerWidth <= 800) {
+            } else if (pageWidth <= 800) {
                 swiperRef.current.setAttribute("slides-per-view", "1.5")
                 swiperRef.current.setAttribute("space-between", "50")
                 swiperRef.current.setAttribute("centered-slides-bounds", "false")
-            } else if (window.innerWidth <= 1300) {
+            } else if (pageWidth <= 1300) {
                 swiperRef.current.setAttribute("slides-per-view", "3.25")
                 swiperRef.current.setAttribute("space-between", "50")
                 swiperRef.current.setAttribute("centered-slides-bounds", "true")
@@ -52,7 +53,8 @@ function TeamPage() {
                     slides-per-view=""
                     direction="horizontal"
                     style={{
-                        "padding": "0 50px"
+                        "padding": "0 50px",
+                        "flexShrink": "1"
                     }}
                     edge-swipe-detection="true"
                 >

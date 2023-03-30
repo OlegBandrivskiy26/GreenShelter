@@ -87,8 +87,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .TeamPage {
+        gap: 50px;
+    }
     .TeamPage-heading {
         padding: 25px;
-        ;
     }
 }

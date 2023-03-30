@@ -1,9 +1,10 @@
 import './App.css';
-// import VideoPage from './Components/VideoPage/VideoPage.jsx'
+import VideoPage from './Components/VideoPage/VideoPage.jsx'
 import TeamPage from "./Components/TeamPage/TeamPage"
 
 import SecondPage from './Components/SecondPage/SecondPage';
 import ThirdPage from './Components/ThirdPage/ThirdPage';
+import Gallarey from './Components/Gallarey/Gallarey';
 
 
 
@@ -22,10 +23,15 @@ function App() {
       {/* ThirdPage */}
       <ThirdPage />
 
+       {/* <VideoPage/> */}
+      <VideoPage/>
+      
+      {/* <Gallarey/> */}
+      <Gallarey/>
 
 
 
-      {/* <VideoPage/> */}
+     
       <TeamPage />
     </div>
   );

@@ -1,4 +1,4 @@
-import play from '../../img/play.webp'
+import play from './img/play.webp'
 import './VideoPage.css'
 function VideoPage(){
 

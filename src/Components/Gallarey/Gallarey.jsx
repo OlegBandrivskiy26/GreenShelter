@@ -1,11 +1,11 @@
 import './Gallarey.css'
-import dog1 from '../../img/dog1.webp'
-import dog2 from '../../img/dog2.webp'
-import dog3 from '../../img/dog3.webp'
-import dog4 from '../../img/dog4.webp'
-import dog5 from '../../img/dog5.webp'
-import dog6 from '../../img/dog6.webp'
-import dog7 from '../../img/dog7.webp'
+import dog1 from './img/dog1.webp'
+import dog2 from './img/dog2.webp'
+import dog3 from './img/dog3.webp'
+import dog4 from './img/dog4.webp'
+import dog5 from './img/dog5.webp'
+import dog6 from './img/dog6.webp'
+import dog7 from './img/dog7.webp'
 // let arrOfDogs=[dog1,dog2,dog3,dog4,dog5,dog6,dog7]
 function Gallarey(){
     return(

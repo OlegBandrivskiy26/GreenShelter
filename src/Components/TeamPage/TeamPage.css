@@ -74,10 +74,12 @@
         align-items: center;
         justify-content: center;
     }
+
     .TeamPage-description {
         text-align: center;
         font-size: calc(14px + 0.25vw);
     }
+
     .TeamPage-headline {
         text-align: center;
         flex-direction: row;
@@ -85,6 +87,8 @@
         flex-wrap: wrap;
     }
 }
+
+
 
 @media screen and (max-width: 500px) {
     .TeamPage-heading {

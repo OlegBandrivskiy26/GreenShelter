@@ -122,7 +122,15 @@ p {
 
 .content {
     z-index: 2000;
+
+
+
+
+
 }
+
+
+
 
 
 
@@ -163,7 +171,7 @@ p {
 
     .SecondPageText {
         position: relative;
-        left: 280px;
+        left: 240px;
         top: -430px;
 
     }
@@ -250,7 +258,7 @@ p {
         width: 541px;
         height: 150px;
         position: relative;
-        left: 22%;
+        left: 18%;
         top: 50px;
         text-align: center;
         font-size: 24px;
@@ -273,6 +281,128 @@ p {
 
     }
 
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        overflow-x: hidden;
+
+
+    }
+
+    .SecondPage {
+        width: 720px;
+        height: 980px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+
+    }
+
+    .SecondPageText {
+        position: relative;
+        left: 225px;
+        top: -430px;
+
+    }
+
+    .SeconPageContainer__p__container {
+        width: 541px;
+        height: 150px;
+        position: relative;
+        left: 15%;
+        top: 50px;
+        text-align: center;
+        /* font-size: calc(27px + .5vw); */
+        /* padding: 2px; */
+
+    }
+
+    .content::before {
+        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
+        font-size: 29px;
+        visibility: visible;
+        z-index: 2000;
+    }
+
+    .SecondPage__BlurAdaptive {
+
+        position: relative;
+        top: -50px;
+
+        width: 7000px;
+        left: -2px;
+        height: 140px;
+
+        border-radius: 40px 40px 0px 0px;
+
+
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .SecondPage {
+        width: 600px;
+        height: 860px;
+
+
+    }
+
+    .SeconPageContainer__p__container {
+        width: 520px;
+        height: 150px;
+        position: relative;
+        left: 23%;
+        top: 10px;
+        text-align: center;
+        /* font-size: calc(27px + .5vw); */
+        /* padding: 2px; */
+
+    }
+
+    .content::before {
+        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
+        font-size: calc(21px + .5vw);
+        visibility: visible;
+        z-index: 2000;
+    }
+
+    .SecondPage__BlurAdaptive {
+        width: 600px;
+        position: relative;
+        left: -5px;
+        top: -42px;
+        height: 130px;
+    }
+
+    .SecondPageText {
+        position: relative;
+        left: 270px;
+        top: -410px;
+    }
+
+    .SecondPageContainer {
+        width: 800px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+
+
+
+
+    }
 }
 
 

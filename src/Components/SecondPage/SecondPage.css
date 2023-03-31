@@ -130,6 +130,45 @@ p {
 }
 
 
+@media screen and (max-width: 1200px) {
+    .SecondPageContainer {
+        width: 100%;
+
+        height: auto;
+        max-height: 1500px;
+        flex-direction: column;
+
+    }
+
+    .SecondPageContainer>* {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ImageBigger {
+        width: auto;
+        height: auto;
+        top: auto;
+        border-radius: 0;
+    }
+
+
+    .SeconPageContainer__p__container {
+        width: 100%;
+        height: auto;
+        position: static;
+        text-align: center;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+
+
+}
+
+
+
+
 
 
 
@@ -255,10 +294,10 @@ p {
         top: 120px
     } */
     .SeconPageContainer__p__container {
-        width: 541px;
+        max-width: 541px;
         height: 150px;
         position: relative;
-        left: 18%;
+        left: 10%;
         top: 50px;
         text-align: center;
         font-size: 24px;
@@ -315,7 +354,7 @@ p {
         width: 541px;
         height: 150px;
         position: relative;
-        left: 15%;
+        left: 7%;
         top: 50px;
         text-align: center;
         /* font-size: calc(27px + .5vw); */
@@ -357,13 +396,14 @@ p {
         height: 860px;
 
 
+
     }
 
     .SeconPageContainer__p__container {
         width: 520px;
         height: 150px;
         position: relative;
-        left: 23%;
+        left: 10%;
         top: 10px;
         text-align: center;
         /* font-size: calc(27px + .5vw); */
@@ -536,13 +576,14 @@ p {
         top: 120px
     } */
     .SeconPageContainer__p__container {
-        width: 331px;
+        width: 400px;
         height: 120px;
         position: relative;
-        left: 14%;
-        top: 160px;
+        left: 5%;
+        top: 120px;
         text-align: center;
         font-size: 24px;
+        padding: 20px;
         /* padding: 2px; */
 
     }

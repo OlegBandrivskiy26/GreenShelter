@@ -21,6 +21,7 @@
 .ThirdPage svg {
     position: relative;
     top: -343px;
+    width: auto;
 
 }
 
@@ -95,23 +96,83 @@ span {
     font-family: 'Comfortaa';
 }
 
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .ThirdPage {
+        max-height: 1800px;
+        height: 900px;
+    }
+
+    .ThirdPage__TextContainer {
+        width: 80%;
+        max-width: 900px;
+        position: relative;
+        top: -230px;
+
+    }
+
+    .ThirdPage svg {
+        width: auto;
+        margin-top: 220px;
+
+    }
+
+    .ThirdPage__text {
+        font-size: 36px;
+    }
+
+    .ThirdPage__p {
+        font-size: 36px;
+    }
+
+    .ThirdPage__CardContainer {
+        width: 80%;
+        max-width: 830px;
+        top: -50px;
+    }
+
+    .two {
+        width: 80%;
+        max-width: 830px;
+    }
+
+    .Card {
+        width: 30%;
+        max-width: 276px;
+        margin: 1%;
+    }
+
+    .Card__p {
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
 
     .ThirdPage {
         width: 800px;
-        height: 950px;
+        height: 800px;
+
+
+
 
     }
 
     .ThirdPage svg {
         height: 700px;
-
-        width: 800px;
-
+        width: 900px;
         position: relative;
-        top: -320px;
-
-
+        top: -330px;
+        left: -35px;
 
 
     }
@@ -122,29 +183,18 @@ span {
 
 
 
-    .two {
-        visibility: visible;
-        width: 800px;
 
-        height: 400px;
-        display: flex;
-
-
-        position: relative;
-        top: -500px;
-        left: -40px
-    }
 
     .ThirdPage__TextContainer {
         position: relative;
         width: 800px;
-        top: -470px;
+        top: -350px;
         height: 123px;
         text-align: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        left: -20px;
+        left: -30px;
 
 
 
@@ -213,8 +263,17 @@ span {
         color: white;
         font-size: 36px;
         position: relative;
-        left: 200px;
+        left: 180px;
 
+
+    }
+
+    .two {
+        visibility: visible;
+        position: relative;
+
+        top: -500px;
+        left: -20px;
 
     }
 
@@ -234,21 +293,25 @@ span {
 @media screen and (max-width: 720px) {
     .ThirdPage {
         width: 720px;
-        height: 1300px;
+        height: 1100px;
         display: flex;
         justify-content: center;
+        background-color: #428F81;
+
+
 
 
     }
 
 
     .ThirdPage svg {
-        height: 700px;
+        height: 400px;
 
-        width: 720px;
+        width: auto;
 
         position: relative;
-        top: -490px;
+
+        top: -600px;
 
 
 
@@ -258,10 +321,11 @@ span {
     .ThirdPage__TextContainer {
         position: relative;
         width: 720px;
-        top: -760px;
+
         height: 123px;
         text-align: center;
         left: -70px;
+        top: -630px;
 
 
 
@@ -270,13 +334,14 @@ span {
 
     .two {
         visibility: visible;
-        height: 1000px;
+        height: 900px;
         display: flex;
         justify-content: center;
 
         position: relative;
-        left: -45px;
-        top: -860px;
+        left: -25px;
+        top: -850px;
+
         width: 720px;
 
 
@@ -298,35 +363,50 @@ span {
 
     }
 
+    .ThirdPage__p::before {
+        visibility: visible;
+        content: 'нашому притулку';
+        color: white;
+        font-size: 36px;
+        position: relative;
+        left: 200px;
+
+    }
+
 
 }
 
 @media screen and (max-width: 600px) {
     .ThirdPage {
         width: 600px;
-        height: 1300px;
+        height: 1200px;
         display: flex;
         justify-content: center;
+        background-color: #428F81;
 
 
     }
 
     .two {
+        height: 900px;
         position: relative;
-        left: -5px;
+        left: -15px;
+        top: -800px;
+
 
     }
 
     .ThirdPage__TextContainer {
         position: relative;
-        left: -27px;
+        left: -57px;
+        top: -600px;
 
     }
 
     .ThirdPage svg {
-        width: 600px;
+        width: 650px;
         position: relative;
-        top: -480px;
+        top: -545px;
 
 
     }
@@ -353,7 +433,8 @@ span {
         width: 486px;
 
         position: relative;
-        top: -570px;
+        top: -683px;
+        left: 0;
 
 
 
@@ -373,8 +454,8 @@ span {
         justify-content: center;
         flex-direction: column;
         position: relative;
-        left: 5px;
-        top: -900px;
+        left: -10px;
+        top: -1150px;
         width: 486px;
 
 
@@ -384,10 +465,10 @@ span {
     .ThirdPage__TextContainer {
         position: relative;
         width: 486px;
-        top: -780px;
+        top: -900px;
         height: 123px;
         text-align: center;
-        left: 0;
+        left: -40px;
 
 
 
@@ -455,7 +536,7 @@ span {
         color: white;
         font-size: 36px;
         position: relative;
-        left: 40px;
+        left: 60px;
         top: -40px
     }
 

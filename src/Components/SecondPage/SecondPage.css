@@ -5,7 +5,6 @@
 }
 
 /* SecondPage */
-
 .SecondPage {
     width: 100%;
     height: 115vh;
@@ -17,15 +16,10 @@
     z-index: 5;
 }
 
-
-
-
-
-
 /* SecondPageConatiner */
-
 .SecondPageContainer {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 390px;
     background-color: white;
     position: relative;
@@ -37,29 +31,21 @@
 .SecondPageTextContainer {
     width: 540px;
     height: 390px;
-
-
 }
 
 .SecondPageTextConatiner__p {
     font-size: 46px;
     font-weight: 400;
     text-align: left;
-
     font-family: 'Comfortaa';
-
-
-
 }
 
 .green {
-
     color: #4A9B8D;
 }
 
 .greenSpan {
     color: #4A9B8D;
-
 }
 
 .SeconPageContainer__p__container {
@@ -69,31 +55,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: #333333;
     text-align: left;
-
     font-family: 'Comfortaa';
     position: relative;
     top: 20px;
-
 }
 
 p {
     font-size: 24px;
-
 }
 
-
 .ImageBigger {
-    /* display: none; */
-    position: relative;
-    /* top: 1500px; */
-    /* display: none; */
-
-    width: 1200px;
-    height: 690px;
-    top: -60px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     z-index: 2;
     transition: 1s;
@@ -101,352 +76,123 @@ p {
 
 .SecondPage__BlurAdaptive {
     position: relative;
-
-
-    width: 500px;
+    width: 100%;
     height: 119px;
-
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(17px);
-
-
-
     /* Note: backdrop-filter has minimal browser support */
-
-
-
-
     border-radius: 40px 40px 0px 0px;
-
+    visibility: hidden;
 }
 
 .content {
     z-index: 2000;
-
-
-
-
-
 }
 
+/* Media queries */
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 870px) {
     .SecondPageContainer {
-        width: 100%;
-
-        height: auto;
-        max-height: 1500px;
         flex-direction: column;
-
-    }
-
-    .SecondPageContainer>* {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .ImageBigger {
-        width: auto;
         height: auto;
-        top: auto;
-        border-radius: 0;
+        padding: 0 10px;
     }
 
+    .SecondPageTextContainer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
     .SeconPageContainer__p__container {
         width: 100%;
         height: auto;
-        position: static;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .ImageBigger {
+        width: 100%;
+        height: auto;
+        top: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .SecondPage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .SecondPageContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .SecondImage {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .SecondPageText {
+        text-align: center;
+    }
+
+    .SecondPageTextConatiner__p::before {
+        content: 'такі';
+        font-size: 46px;
+        font-weight: 400;
+        font-family: var(--font-family);
+        color: black;
+        display: inline-block;
+    }
+
+    .contentAdaptive::before {
+        content: '“Green Shelter”';
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .greenSpan::before {
+        content: 'Хто';
+        color: var(--secondary-color);
+    }
+
+    .content::before {
+        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--text-color);
+    }
+
+    .SeconPageContainer__p__container {
+        width: 100%;
         text-align: center;
         font-size: 24px;
         padding: 20px;
     }
 
-
-
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width: 800px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .SecondPage {
-        width: 800px;
-        height: 980px;
-
-    }
-
-    .SecondPageContainer {
-        width: 800px;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        top: 40px;
-
-
-
-
-    }
-
-    .SecondImage {
-        width: 800px;
-        height: 300px;
-        border-radius: 10px 10px 0px 0px;
-        position: relative;
-        top: 90px;
-
-    }
-
-
-
-
-    .SecondPageText {
-        position: relative;
-        left: 240px;
-        top: -430px;
-
-    }
-
-
-    .SecondPageTextConatiner__p {
-        visibility: hidden;
-
-    }
-
-    .SecondPageTextConatiner__p::before {
-        content: '  такі';
-        font-size: 46px;
-        font-weight: 400;
-
-
-        font-family: 'Comfortaa';
-
-
-        visibility: visible;
-        color: black;
-        position: relative;
-        left: 120px;
-        top: 51px;
-
-
-
-        display: flex;
-        align-items: center;
-
-
-
-
-
-
-    }
-
-
-
-    .contentAdaptive::before {
-        content: '“Green Shelter”';
-        visibility: visible;
-        position: relative;
-        left: -50px;
-        top: 10px;
-
-
-
-
-
-    }
-
-    .greenSpan {
-        visibility: hidden;
-    }
-
-    .greenSpan::before {
-        visibility: visible;
-        content: 'Хто';
-        color: #4A9B8D;
-
-
-    }
-
-
-
-    .content {
-        visibility: hidden;
-        /* z-index: 2000; */
-    }
-
-    .content::before {
-        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
-        font-size: 29px;
-        visibility: visible;
-        z-index: 2000;
-    }
-
-    /* .SeconPageContainer__p__container {
-        height: 70px;
-        top: 120px
-    } */
-    .SeconPageContainer__p__container {
-        max-width: 541px;
-        height: 150px;
-        position: relative;
-        left: 10%;
-        top: 50px;
-        text-align: center;
-        font-size: 24px;
-        /* padding: 2px; */
-
-    }
-
-
     .SecondPage__BlurAdaptive {
-
-        position: relative;
-        top: -50px;
-        width: 790px;
-        left: -10px;
-
+        width: 100%;
         height: 140px;
-        border-radius: 40px 40px 0px 0px;
-
-
-
-    }
-
-}
-
-@media screen and (max-width: 720px) {
-    body {
-        overflow-x: hidden;
-
-
-    }
-
-    .SecondPage {
-        width: 720px;
-        height: 980px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-
-
-    }
-
-    .SecondPageText {
-        position: relative;
-        left: 225px;
-        top: -430px;
-
-    }
-
-    .SeconPageContainer__p__container {
-        width: 541px;
-        height: 150px;
-        position: relative;
-        left: 7%;
-        top: 50px;
-        text-align: center;
-        /* font-size: calc(27px + .5vw); */
-        /* padding: 2px; */
-
-    }
-
-    .content::before {
-        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
-        font-size: 29px;
-        visibility: visible;
-        z-index: 2000;
-    }
-
-    .SecondPage__BlurAdaptive {
-
-        position: relative;
-        top: -50px;
-
-        width: 7000px;
-        left: -2px;
-        height: 140px;
-
-        border-radius: 40px 40px 0px 0px;
-
-
+        border-radius: 40px 40px 0 0;
 
     }
 }
-
-@media screen and (max-width: 600px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .SecondPage {
-        width: 600px;
-        height: 860px;
-
-
-
-    }
-
-    .SeconPageContainer__p__container {
-        width: 520px;
-        height: 150px;
-        position: relative;
-        left: 10%;
-        top: 10px;
-        text-align: center;
-        /* font-size: calc(27px + .5vw); */
-        /* padding: 2px; */
-
-    }
-
-    .content::before {
-        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
-        font-size: calc(21px + .5vw);
-        visibility: visible;
-        z-index: 2000;
-    }
-
-    .SecondPage__BlurAdaptive {
-        width: 600px;
-        position: relative;
-        left: -5px;
-        top: -42px;
-        height: 130px;
-    }
-
-    .SecondPageText {
-        position: relative;
-        left: 270px;
-        top: -410px;
-    }
-
-    .SecondPageContainer {
-        width: 800px;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        top: 50px;
-
-
-
-
-    }
-}
-
-
-
 
 @media screen and (max-width: 500px) {
     body {

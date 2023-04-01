@@ -26,7 +26,10 @@ function SecondPage() {
             {open && (
 
 
+
                 <div className="SecondPageContainer">
+
+
 
                     <img src={image} alt="" onClick={OpenImage} className='SecondImage' />
 
@@ -67,13 +70,16 @@ function SecondPage() {
 
 
 
+
+
             {/* svg */}
+
+
             {
                 isOpen && (
                     <img src={imageBiger} alt="" className='ImageBigger' onClick={CloseImage} />
                 )
             }
-
 
         </div >
     )

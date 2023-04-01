@@ -100,6 +100,10 @@ span {
 
 
 
+
+
+
+
 @media screen and (max-width: 1200px) {
     .ThirdPage {
         max-height: 1800px;
@@ -156,7 +160,13 @@ span {
 
 
 
+
+
+
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .ThirdPage {
         width: 800px;
@@ -169,7 +179,7 @@ span {
 
     .ThirdPage svg {
         height: 700px;
-        width: 900px;
+        width: 800px;
         position: relative;
         top: -330px;
         left: -35px;

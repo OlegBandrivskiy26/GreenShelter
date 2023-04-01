@@ -118,81 +118,7 @@ p {
 
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        overflow-x: hidden;
-    }
 
-    .SecondPage {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
-        justify-items: center;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .SecondPageContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .SecondImage {
-        width: 100%;
-        height: auto;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .SecondPageText {
-        text-align: center;
-    }
-
-    .SecondPageTextConatiner__p::before {
-        content: 'такі';
-        font-size: 46px;
-        font-weight: 400;
-        font-family: var(--font-family);
-        color: black;
-        display: inline-block;
-    }
-
-    .contentAdaptive::before {
-        content: '“Green Shelter”';
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--primary-color);
-    }
-
-    .greenSpan::before {
-        content: 'Хто';
-        color: var(--secondary-color);
-    }
-
-    .content::before {
-        content: '«Зелений притулок» або, як більш звично, Green house dog’s shelter це місце для евакуації собак з зони бойових дій. Ціль нашого притулку прийняти евакуйованих собак, покинутих власниками чи зі знищених притулків, і допомогти з перетином кордону та пошуком кращого житла.';
-        font-size: 24px;
-        font-weight: 400;
-        color: var(--text-color);
-    }
-
-    .SeconPageContainer__p__container {
-        width: 100%;
-        text-align: center;
-        font-size: 24px;
-        padding: 20px;
-    }
-
-    .SecondPage__BlurAdaptive {
-        width: 100%;
-        height: 140px;
-        border-radius: 40px 40px 0 0;
-
-    }
-}
 
 @media screen and (max-width: 500px) {
     body {
@@ -201,7 +127,7 @@ p {
 
     .SecondPage {
         width: 486px;
-        height: 980px;
+        height: 940px;
 
         display: flex;
         justify-content: center;
@@ -225,12 +151,13 @@ p {
     }
 
     .SecondImage {
-        width: 486px;
+        width: 120%;
+
         height: 300px;
         border-radius: 10px 10px 0px 0px;
         position: relative;
         top: 90px;
-
+        left: -20px
     }
 
 
@@ -348,6 +275,17 @@ p {
 
 
 
+    }
+
+    .SecondPage__BlurAdaptive {
+        position: relative;
+        width: 100%;
+        height: 159px;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(17px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 40px 40px 0px 0px;
+        visibility: visible;
     }
 
 

@@ -1,10 +1,8 @@
 import './App.css';
-import VideoPage from './Components/VideoPage/VideoPage.jsx'
-import TeamPage from "./Components/TeamPage/TeamPage"
 
-import SecondPage from './Components/SecondPage/SecondPage';
-import ThirdPage from './Components/ThirdPage/ThirdPage';
-import Gallarey from './Components/Gallarey/Gallarey';
+import FilterInput from './FilterInput/FilterInput';
+import FilterText from './FilterText/FilterText';
+;
 
 
 
@@ -14,25 +12,17 @@ import Gallarey from './Components/Gallarey/Gallarey';
 function App() {
   return (
     <div className="App">
+      <div className='Phone'>
+        <FilterInput />
+        <FilterText />
+      </div>
 
 
 
-      {/* SecondPage */}
-      <SecondPage />
-
-      {/* ThirdPage */}
-      <ThirdPage />
-
-       {/* <VideoPage/> */}
-      <VideoPage/>
-      
-      {/* <Gallarey/> */}
-      <Gallarey/>
 
 
 
-     
-      <TeamPage />
+
     </div>
   );
 }
